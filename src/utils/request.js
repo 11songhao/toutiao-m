@@ -1,19 +1,19 @@
 // 对axios进行封装
 import axios from 'axios'
 import store from '@/store'
-import JSONBig from 'json-bigint'
+// import JSONBig from 'json-bigint'
 
 const request = axios.create({
-  baseURL: 'http://toutiao-app.itheima.net',
+  baseURL: 'http://toutiao.itheima.net/',
   timeout: 3000,
-  transformResponse: [function (data) {
-    // 1. 找到了处理的时机
-    try {
-      return JSONBig.parse(data)
-    } catch (err) {
-      return data
-    }
-  }]
+  // transformResponse: [function (data) {
+  //   // 1. 找到了处理的时机
+  //   try {
+  //     return JSONBig.parse(data)
+  //   } catch (err) {
+  //     return data
+  //   }
+  // }]
 })
 
 // 拦截所有利用request发出的请求

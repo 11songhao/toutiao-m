@@ -1,7 +1,7 @@
 @font-face {
   font-family: "toutiao";
-  /* Project id 3510359 */
-  src: url('iconfont.woff2?t=1657290609673') format('woff2'), url('iconfont.woff?t=1657290609673') format('woff'), url('iconfont.ttf?t=1657290609673') format('truetype');
+  /* Project id 2956495 */
+  src: url('//at.alicdn.com/t/font_2956495_q6myppaq6d.woff2?t=1637570009861') format('woff2'), url('//at.alicdn.com/t/font_2956495_q6myppaq6d.woff?t=1637570009861') format('woff'), url('//at.alicdn.com/t/font_2956495_q6myppaq6d.ttf?t=1637570009861') format('truetype');
 }
 .toutiao {
   font-family: "toutiao" !important;
@@ -10,63 +10,76 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.toutiao-guanbi:before {
-  content: "\e601";
-}
 .toutiao-dianzan:before {
-  content: "\e602";
+  content: "\e674";
 }
-.toutiao-pinglun:before {
-  content: "\e603";
-}
-.toutiao-gengduo:before {
-  content: "\e604";
+.toutiao-dianzan2:before {
+  content: "\e675";
 }
 .toutiao-fenxiang:before {
-  content: "\e605";
+  content: "\e676";
 }
-.toutiao-shoucang:before {
-  content: "\e606";
+.toutiao-pinglun:before {
+  content: "\e677";
 }
-.toutiao-lishi:before {
-  content: "\e607";
-}
-.toutiao-sousuo:before {
-  content: "\e608";
+.toutiao-guanbi:before {
+  content: "\e678";
 }
 .toutiao-shanchu:before {
-  content: "\e609";
+  content: "\e679";
 }
-.toutiao-shouye:before {
-  content: "\e60a";
+.toutiao-shoucang:before {
+  content: "\e67a";
 }
-.toutiao-wode:before {
-  content: "\e60b";
-}
-.toutiao-youjiantou:before {
-  content: "\e60c";
-}
-.toutiao-yanzhengma:before {
-  content: "\e60d";
-}
-.toutiao-shipin:before {
-  content: "\e60e";
-}
-.toutiao-shouji:before {
-  content: "\e60f";
+.toutiao-lishi:before {
+  content: "\e67b";
 }
 .toutiao-wenda:before {
-  content: "\e610";
+  content: "\e67c";
 }
-.toutiao-wuwangluo:before {
-  content: "\e611";
+.toutiao-gengduo:before {
+  content: "\e67d";
 }
-.toutiao-zuopin:before {
-  content: "\e612";
+.toutiao-shouye:before {
+  content: "\e67e";
+}
+.toutiao-youjiantou:before {
+  content: "\e67f";
+}
+.toutiao-shipin:before {
+  content: "\e680";
+}
+.toutiao-wode:before {
+  content: "\e681";
+}
+.toutiao-shouji:before {
+  content: "\e682";
 }
 .toutiao-yuedu:before {
-  content: "\e613";
+  content: "\e683";
 }
 .toutiao-zuojiantou:before {
-  content: "\e614";
+  content: "\e684";
+}
+.toutiao-wuwangluo:before {
+  content: "\e685";
+}
+.toutiao-yanzhengma:before {
+  content: "\e686";
+}
+.toutiao-sousuo:before {
+  content: "\e687";
+}
+.toutiao-zuopin:before {
+  content: "\e688";
+}
+html,
+body {
+  background: #F5F7F9;
+}
+.page-nav-bar {
+  background-color: #3296FA;
+}
+.page-nav-bar .van-nav-bar__title {
+  color: #fff;
 }
