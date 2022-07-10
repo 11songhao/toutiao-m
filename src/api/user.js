@@ -1,3 +1,4 @@
+//用户相关请求模块
 import request from "@/utils/request";
 
 export const login =(data)=>{
@@ -7,3 +8,13 @@ export const login =(data)=>{
       data
     });
 }
+/**
+ * 发送验证码
+ * 注意：每个手机号请求一次
+*/ 
+export const sendSms = (mobile) => {
+  return request({
+    method: "GET",
+    url: `/v1_0/sms/codes/${mobile}`,
+  });
+};

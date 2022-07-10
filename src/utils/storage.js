@@ -1,37 +1,24 @@
-// 封装本地存储的方法
+// 封装本地存储操作模块
 
-/**
- * 获取数据
- * @param {*} key 获取本地存储的名字
- */
-export function getStorage (key) {
-  const data = localStorage.getItem(key)
+//存储数据
+export const setItem = (key, value) => {
+  //jiang数组对象转换为字符串存储
+  if (typeof value === "object") {
+    value = JSON.stringify(value);
+  }
+  window.localStorage.setItem(key, value);
+};
+//获取数据
+export const getItem = (key) => {
+  const data = window.localStorage.getItem(key);
   try {
-    return JSON.parse(data)
+    return JSON.parse(data);
   } catch (err) {
-    // 肯定是 普通字符串
-    return data
+    console.log(err);
   }
-  // data 有可能需要 JOSN.parse 处理 数据类型 JSON字符串
-  // data 不需要 JSON.parse 处理 不是JSON字符串
-}
-
-/**
- * 本地存储
- * @param {*} key 给本地存储的名字
- * @param {*} value 给本地存储的值
- */
-export function setStorage (key, value) {
-  if (typeof value === 'object') {
-    value = JSON.stringify(value)
-  }
-  localStorage.setItem(key, value)
-}
-
-/**
- * 删除存储
- * @param {*} key 删除存储的名称
- */
-export function removeStorage (key) {
-  localStorage.removeItem(key)
-}
+  return data;
+};
+//删除数据
+export const removeItem = (key) => {
+  window.localStorage.removeItem(key);
+};
