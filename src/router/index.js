@@ -4,9 +4,36 @@ Vue.use(VueRouter);
 //路由表
 const routes = [
   {
-    path: "/",
+    path: "/login",
     name: "login",
-    component: () => import("@/views/login/index.vue"),
+    component: () => import("@/views/login"),
+  },
+  {
+    path: "/",
+    // name: "layout",  //如果父路由有默认子路由，那它的name没有意义
+    component: () => import("@/views/Layout"),
+    children: [
+      {
+        path: "",  //path为空时，默认是子路由，并且只能有一个
+        name: "home",
+        component: () => import("@/views/home"),
+      },
+      {
+        path: "/qa",
+        name: "qa",
+        component: () => import("@/views/qa"),
+      },
+      {
+        path: "/video",
+        name: "video",
+        component: () => import("@/views/video"),
+      },
+      {
+        path: "/my",
+        name: "my",
+        component: () => import("@/views/my"),
+      },
+    ],
   },
 ];
 

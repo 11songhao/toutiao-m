@@ -1,6 +1,8 @@
 <template>
   <div class="login-container">
-    <van-nav-bar class="page-nav-bar" title="登录" />
+    <van-nav-bar class="page-nav-bar" title="登录">
+      <van-icon slot="left" name="cross" @click="$router.back()"/>
+    </van-nav-bar>
     <van-form ref="loginFrom" @submit="onSubmit">
       <van-field
         v-model="user.mobile"
@@ -104,7 +106,8 @@ export default {
         const { data } = await login(this.user);
         this.$store.commit("setUser", data.data);
         this.$toast.success("登录成功");
-
+        console.log(data);
+        this.$router.back()
         // 登录成功，跳转回原来页面
         // back 的方式不严谨，后面讲功能优化的时候再说
       } catch (err) {
