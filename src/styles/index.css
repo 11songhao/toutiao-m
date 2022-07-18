@@ -75,12 +75,8 @@
 }
 html,
 body {
-  background: #F5F7F9;
+  background: #f5f7f9;
 }
 .page-nav-bar {
-  background-color: #3296FA;
-}
-.page-nav-bar .van-nav-bar__title,
-.page-nav-bar .van-icon {
-  color: #fff;
+  background-color: #3296fa;
 }

@@ -14,7 +14,7 @@ const routes = [
     component: () => import("@/views/Layout"),
     children: [
       {
-        path: "",  //path为空时，默认是子路由，并且只能有一个
+        path: "/home", //path为空时，默认是子路由，并且只能有一个
         name: "home",
         component: () => import("@/views/home"),
       },
@@ -35,7 +35,7 @@ const routes = [
       },
     ],
   },
-];
+]
 
 const router = new VueRouter({
   routes,

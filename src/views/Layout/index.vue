@@ -6,7 +6,7 @@
 
     <!-- 标签导航栏 -->
     <van-tabbar class="layout-tabbar" route>
-      <van-tabbar-item to="/">
+      <van-tabbar-item to="/home">
         <i slot="icon" class="toutiao toutiao-shouye"></i>
         <span class="text">首页</span>
       </van-tabbar-item>
@@ -30,7 +30,9 @@
 export default {
   name: "LayoutIndex",
   data() {
-    return {};
+    return {
+      
+    };
   },
   props: {
     obj: {
